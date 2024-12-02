@@ -1,0 +1,3 @@
+[30-Nov-2024 23:44:11 UTC] [critical] Error thrown while running command "'make:controller'". Message: "There are no commands defined in the "make" namespace.
+
+You may be looking for a command provided by the "MakerBundle" which is currently not installed. Try running "composer require symfony/maker-bundle --dev"."
