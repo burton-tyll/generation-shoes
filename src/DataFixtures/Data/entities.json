@@ -1,0 +1,18 @@
+[
+  {
+    "name": "brand"
+  },
+  {
+    "name": "category"
+  },
+  {
+    "name": "picture"
+  },
+  {
+    "name": "product"
+  },
+  {
+    "name": "product_variant"
+  }
+
+]

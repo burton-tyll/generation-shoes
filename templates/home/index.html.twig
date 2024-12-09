@@ -1,157 +1,208 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="/assets/css/product-card.css">
+    <link rel="stylesheet" href="/assets/css/home-slider.css">
+    <link rel="stylesheet" href="/assets/css/brand-slider.css">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="/assets/js/brand-slider.js"></script>
+{% endblock %}
+
 {% block body %}
-    <main style="background: var(--bs-body-bg);">
-        <!-- Start: Accueil -->
-        <section>
-            <div class="d-flex flex-column align-items-center flex-lg-row" style="height: 80svh;">
-                <div class="d-flex flex-column justify-content-center p-5 w-100" style="width: 50%;height: 100%;">
-                    <h1 style="font-size: 5rem;">Black Friday</h1>
-                    <p>Promos sur une sélection d'articles sur Génération Shoes !&nbsp;Des chaussures respectueuses des pieds des enfants à petit prix !</p>
-                </div>
-                <div class="w-100" style="height: 100%; background-image: url('assets/img/heroBackground.jpg'); background-size: cover;"></div>
-            </div>
-        </section><!-- End: Accueil -->
-        <div style="height: 5svh;border-top-style: solid;border-top-color: var(--bs-dark-border-subtle);border-bottom-style: solid;border-bottom-color: var(--bs-dark-border-subtle);"></div><!-- Start: Produits Phares -->
-        <section>
-            <h1 class="container">Produits phares</h1><!-- Start: products-grid -->
-            <div class="d-flex justify-content-start flex-wrap flex-md-row container">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End: products-grid -->
-        </section><!-- End: Produits Phares -->
-        <!-- Start: Assurances -->
-        <section style="background: #222222;color: rgb(255,255,255);">
-            <div class="d-flex justify-content-center flex-wrap" style="background: var(--bs-light);">
-                <div class="d-flex flex-column justify-content-center align-items-center col-12 col-lg-4 p-3"><i class="fa fa-heart" style="font-size: 54px;color: var(--bs-primary);"></i>
-                    <h3 style="color: var(--bs-secondary);">30 jours pour changer d’avis</h3>
-                    <p style="font-size: 1rem;padding-right: 10px;padding-left: 10px;"><br><span style="color: rgb(77, 94, 90);">Retours faciles et sans tracas : Contacte-nous pour retourner ton article en toute simplicité.</span><br><br></p>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center col-12 col-lg-4 p-3"><i class="fa fa-lock" style="font-size: 54px;color: var(--bs-primary);"></i>
-                    <h3 style="font-size: 1.5rem;color: var(--bs-secondary);">Paiement Sécurisé</h3>
-                    <p style="font-size: 1rem;padding-right: 10px;padding-left: 10px;"><br><span style="color: rgb(77, 94, 90);">Tes données personnelles sont protégées à chaque instant. Visa, Mastercard, Apple Pay, PayPal, virement instantané...</span><br><br></p>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center col-12 col-lg-4 p-3"><i class="fa fa-clock-o" style="font-size: 54px;color: var(--bs-primary);"></i>
-                    <h3 style="font-size: 1.5rem;color: var(--bs-secondary);">Expédiée en 24h</h3>
-                    <p style="font-size: 1rem;padding-right: 10px;padding-left: 10px;"><br><span style="color: rgb(77, 94, 90);">Commande expédiée le jour même avant midi. Reçois ton colis chez toi ou en point relais en 3 à 7 jours ouvrés dans toute l'Union Européenne.</span><br><br></p>
+    <!-- Start: Accueil -->
+    <section>
+        <div class="d-flex flex-column align-items-center flex-lg-row" style="height: 75svh;">
+            <div class="h-50 home-slider-left" style="background: url('assets/img/slider_background.png'); width: 100%;">
+                <div style="width: 50%;">
+                    <h1 style="font-size: 7rem;color: var(--bs-primary);font-weight: bold;">Black Friday</h1>
+                    <p style="color: var(--bs-secondary);font-size: 1.2rem;">Promos sur une sélection d'articles sur Génération Shoes !&nbsp;Des chaussures respectueuses des pieds des enfants à petit prix !</p>
                 </div>
             </div>
-        </section><!-- End: Assurances -->
-        <!-- Start: Nouveaux Produits -->
-        <section>
-            <h1 class="container">Nouveaux produits</h1><!-- Start: products-grid -->
-            <div class="d-flex justify-content-start flex-wrap flex-md-row container">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
+            <div class="h-50 home-slider-right" style="width: 100%;">
+                <picture><img class="h-100 w-100" src="assets/img/promo.png" width="" height=""></picture>
+            </div>
+        </div>
+    </section>
+    <!-- End: Accueil -->
+    <div class="marquee container-fluid w-100">
+        <ul class="marquee-content">
+            <li><i class="fab fa-github"></i></li>
+            <li><i class="fab fa-codepen"></i></li>
+            <li><i class="fab fa-free-code-camp"></i></li>
+            <li><i class="fab fa-dev"></i></li>
+            <li><i class="fab fa-react"></i></li>
+            <li><i class="fab fa-vuejs"></i></li>
+            <li><i class="fab fa-angular"></i></li>
+            <li><i class="fab fa-node"></i></li>
+            <li><i class="fab fa-wordpress"></i></li>
+            <li><i class="fab fa-aws"></i></li>
+            <li><i class="fab fa-docker"></i></li>
+            <li><i class="fab fa-android"></i></li>
+        </ul>
+    </div>
+    <!-- Start: Produits Phares -->
+    <section>
+        <h1 class="container">Produits phares</h1>
+        <!-- Start: products-grid -->
+        <div class="bd-grid">
+            {% for product in latestProducts %}
+            <article class="card">
+                {% if(pictures[product.id]) %}<div class="card__img"><img src="/assets/img/original/{{ pictures[product.id].original }}" alt=""></div>{% endif %}
+                <div class="card__name">
+                    <p>{{ product.name }}</p>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
+                <div class="card__precis"><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div>{% if(product.reduction) %}<span class="card__preci card__preci--before"><s>{{ product.price }}€</s></span>{% endif %}<span class="card__preci card__preci--now">{{ product.reduction ? product.discountPrice : product.price }}€</span></div><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart2">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
+            </article>
+            {% endfor %}
+        </div>
+        <!-- End: products-grid -->
+    </section>
+    <!-- End: Produits Phares -->
+    <!-- Start: Assurances -->
+    <section style="background: #222222;color: rgb(255,255,255);">
+        <div class="d-flex justify-content-center flex-wrap" style="background: var(--bs-light);">
+            <div class="d-flex flex-column justify-content-center align-items-center col-12 col-lg-4 p-3"><i class="fa fa-heart" style="font-size: 54px;color: var(--bs-primary);"></i>
+                <h3 style="color: var(--bs-secondary);">30 jours pour changer d’avis</h3>
+                <p style="font-size: 1rem;padding-right: 10px;padding-left: 10px;"><br><span style="color: rgb(77, 94, 90);">Retours faciles et sans tracas : Contacte-nous pour retourner ton article en toute simplicité.</span><br><br></p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center col-12 col-lg-4 p-3"><i class="fa fa-lock" style="font-size: 54px;color: var(--bs-primary);"></i>
+                <h3 style="font-size: 1.5rem;color: var(--bs-secondary);">Paiement Sécurisé</h3>
+                <p style="font-size: 1rem;padding-right: 10px;padding-left: 10px;"><br><span style="color: rgb(77, 94, 90);">Tes données personnelles sont protégées à chaque instant. Visa, Mastercard, Apple Pay, PayPal, virement instantané...</span><br><br></p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center col-12 col-lg-4 p-3"><i class="fa fa-clock-o" style="font-size: 54px;color: var(--bs-primary);"></i>
+                <h3 style="font-size: 1.5rem;color: var(--bs-secondary);">Expédiée en 24h</h3>
+                <p style="font-size: 1rem;padding-right: 10px;padding-left: 10px;"><br><span style="color: rgb(77, 94, 90);">Commande expédiée le jour même avant midi. Reçois ton colis chez toi ou en point relais en 3 à 7 jours ouvrés dans toute l'Union Européenne.</span><br><br></p>
+            </div>
+        </div>
+    </section>
+    <!-- End: Assurances -->
+    <!-- Start: Nouveaux Produits -->
+    <section>
+        <h1 class="container">Nouveaux produits</h1><!-- Start: products-grid -->
+        <div class="bd-grid">
+            <article class="card">
+                <div class="card__img"><img src="https://i.postimg.cc/8PkwdTYd/image.png" alt /></div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
+                <div class="card__precis"><a href><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div><span class="card__preci card__preci--before">$990.00</span><span class="card__preci card__preci--now">$749.00</span></div><a href><svg class="bi bi-cart2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
+            </article>
+            <article class="card">
+                <div class="card__img"><img src="https://i.postimg.cc/8PkwdTYd/image.png" alt /></div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
+                <div class="card__precis"><a href><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div><span class="card__preci card__preci--before">$990.00</span><span class="card__preci card__preci--now">$749.00</span></div><a href><svg class="bi bi-cart2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
+            </article>
+            <article class="card">
+                <div class="card__img"><img src="https://i.postimg.cc/8PkwdTYd/image.png" alt /></div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3" style="padding-right: 15px;padding-left: 15px;margin-bottom: 15px;margin-top: 15px;">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/400x400.png">
-                        <div class="card-body">
-                            <h4 class="card-title" style="text-align: center;">Title</h4><span class="d-flex justify-content-center" style="font-weight: bold;">99€</span>
-                        </div>
-                    </div>
+                <div class="card__precis"><a href><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div><span class="card__preci card__preci--before">$990.00</span><span class="card__preci card__preci--now">$749.00</span></div><a href><svg class="bi bi-cart2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
                 </div>
-            </div><!-- End: products-grid -->
-        </section><!-- End: Nouveaux Produits -->
-    </main>
+            </article>
+            <article class="card">
+                <div class="card__img"><img src="https://i.postimg.cc/8PkwdTYd/image.png" alt /></div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis"><a href><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div><span class="card__preci card__preci--before">$990.00</span><span class="card__preci card__preci--now">$749.00</span></div><a href><svg class="bi bi-cart2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__img"><img src="https://i.postimg.cc/8PkwdTYd/image.png" alt /></div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis"><a href><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div><span class="card__preci card__preci--before">$990.00</span><span class="card__preci card__preci--now">$749.00</span></div><a href><svg class="bi bi-cart2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__img"><img src="https://i.postimg.cc/8PkwdTYd/image.png" alt /></div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis"><a href><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div><span class="card__preci card__preci--before">$990.00</span><span class="card__preci card__preci--now">$749.00</span></div><a href><svg class="bi bi-cart2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__img"><img src="https://i.postimg.cc/8PkwdTYd/image.png" alt /></div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis"><a href><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div><span class="card__preci card__preci--before">$990.00</span><span class="card__preci card__preci--now">$749.00</span></div><a href><svg class="bi bi-cart2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__img"><img src="https://i.postimg.cc/8PkwdTYd/image.png" alt /></div>
+                <div class="card__name">
+                    <p>AIR ZOOM PEGASUS</p>
+                </div>
+                <div class="card__precis"><a href><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"></path>
+                        </svg></a>
+                    <div><span class="card__preci card__preci--before">$990.00</span><span class="card__preci card__preci--now">$749.00</span></div><a href><svg class="bi bi-cart2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"></path>
+                        </svg></a>
+                </div>
+            </article>
+        </div>
+        <!-- End: products-grid -->
+    </section>
+    <!-- End: Nouveaux Produits -->
 {% endblock %}

@@ -20,5 +20,8 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+    App\Purger\MysqlOrmPurgerFactory:
+        arguments:
+            $disableForeignKeyChecks: true
+        tags:
+            - { name: 'doctrine.fixtures.purger_factory', alias: 'mysql_purger' }

@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "name": "Air Max",
+    "description": "Un classique intemporel offrant un amorti supérieur pour un confort quotidien.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 2,
+    "name": "Jordan 1",
+    "description": "Les emblématiques baskets de basket-ball pour un style audacieux et sportif.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 3,
+    "name": "Yeezy Boost",
+    "description": "Un design futuriste et un confort exceptionnel pour un look avant-gardiste.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 4,
+    "name": "Superstar",
+    "description": "La sneaker iconique avec un design intemporel et une coque avant distinctive.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 5,
+    "name": "Chuck Taylor",
+    "description": "Les baskets légendaires avec un style classique et une grande polyvalence.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 6,
+    "name": "Vans Old Skool",
+    "description": "Les chaussures emblématiques avec des bandes latérales pour un style urbain.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 7,
+    "name": "Air Force 1",
+    "description": "Les baskets légendaires offrant un confort et un style inégalés.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 8,
+    "name": "Blazer",
+    "description": "Des baskets rétro inspirées du basket-ball avec une touche moderne.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 9,
+    "name": "Puma Suede",
+    "description": "Un design classique en daim pour une allure élégante et décontractée.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 10,
+    "name": "Gel-Lyte",
+    "description": "Chaussures de running légères avec une excellente absorption des chocs.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 11,
+    "name": "Ultraboost",
+    "description": "Des chaussures de performance conçues pour des courses intenses et dynamiques.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 12,
+    "name": "Gazelle",
+    "description": "Un style classique et polyvalent adapté à toutes les occasions.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 13,
+    "name": "RS-X",
+    "description": "Une sneaker audacieuse et futuriste pour les amateurs de mode.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 14,
+    "name": "ZoomX Vaporfly",
+    "description": "Les chaussures de course ultra-légères pour des performances de pointe.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 15,
+    "name": "Classic Leather",
+    "description": "Des baskets intemporelles offrant un confort et une simplicité élégante.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 16,
+    "name": "Speedcross",
+    "description": "Des chaussures de trail avec une excellente adhérence pour les terrains accidentés.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 17,
+    "name": "ZX 2K Boost",
+    "description": "Un confort inégalé et un style futuriste pour les amateurs de streetwear.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 18,
+    "name": "Wave Rider",
+    "description": "Des chaussures de running performantes pour des entraînements efficaces.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 19,
+    "name": "Club C",
+    "description": "Un design rétro et minimaliste pour un style casual.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 20,
+    "name": "Phantom GT",
+    "description": "Des chaussures de football conçues pour la précision et la puissance.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 21,
+    "name": "React Infinity",
+    "description": "Des chaussures de running offrant un excellent amorti pour de longues courses.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 22,
+    "name": "Predator",
+    "description": "Des chaussures de football offrant un contrôle de balle supérieur.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 23,
+    "name": "Mercurial",
+    "description": "Des chaussures de football ultra-légères pour une vitesse optimale.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 24,
+    "name": "Court Vision",
+    "description": "Des baskets inspirées du basket-ball pour un look rétro.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 25,
+    "name": "EQT Support",
+    "description": "Des chaussures techniques combinant confort et style sportif.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  },
+  {
+    "id": 26,
+    "name": "Copa Mundial",
+    "description": "Une légende du football offrant confort et performance.",
+    "price": 79.99,
+    "reduction": 0,
+    "discount_price": null,
+    "created_at": "2024-12-02T10:00:00"
+  }
+]
