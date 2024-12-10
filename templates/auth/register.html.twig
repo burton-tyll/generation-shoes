@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="custom_form col-12 col-md-6 col-lg-4 p-4 my-5">
+        {{ form_start(registerForm) }}
+        {% include 'form/_flashes.html.twig' %}
+        {{ form_end(registerForm) }}
+    </div>
+{% endblock %}

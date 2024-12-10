@@ -20,7 +20,7 @@ class HomeController extends AbstractController
         $this->pictureRepository = $pictureRepository;
     }
 
-    #[Route('/', name: 'app_home')]
+    #[Route('/', name: 'home')]
     public function index(): Response
     {
         $user = ['name' => 'Burton', 'role' => 'ROLE_ADMIN'];

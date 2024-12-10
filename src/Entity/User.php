@@ -3,10 +3,11 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 
 #[ORM\Entity]
 #[ORM\Table(name: "user")]
-class User
+class User implements PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -33,6 +34,9 @@ class User
 
     #[ORM\Column(type: "string", length: 50)]
     private string $role;
+
+    #[ORM\Column(type: 'datetime')]
+    private \DateTime $created_at;
 
     public function getId(): int
     {
@@ -109,5 +113,14 @@ class User
         $this->role = $role;
     }
 
+    public function getCreatedAt(): \DateTime
+    {
+        return $this->created_at;
+    }
+
+    public function setCreatedAt(\DateTime $created_at): void
+    {
+        $this->created_at = $created_at;
+    }
 
 }

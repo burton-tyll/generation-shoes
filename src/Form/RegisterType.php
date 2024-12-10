@@ -2,8 +2,9 @@
 
 namespace App\Form;
 
-use Doctrine\DBAL\Types\TextType;
+use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
@@ -34,17 +35,22 @@ class RegisterType extends AbstractType
                     'placeholder' => 'Entrez votre email',
                 ]
             ])
-            ->add('password', PasswordType::class, [
-                'label' => 'Mot de passe',
-                'attr' => [
-                    'placeholder' => 'Entrez votre mot de passe',
-                ]
-            ])
-            ->add('password_confirm', RepeatedType::class, [
+            ->add('password', RepeatedType::class, [
                 'type' => PasswordType::class,
+                'invalid_message' => 'Les mots de passe doivent correspondre.',
+                'required' => true,
                 'first_options' => [
-                    'label' => 'Confirmation mot de passe',
-                ]
+                    'label' => 'Mot de passe',
+                    'attr' => [
+                        'placeholder' => 'Entrez votre mot de passe',
+                    ]
+                ],
+                'second_options' => [
+                    'label' => 'Confirmation du mot de passe',
+                    'attr' => [
+                        'placeholder' => 'Confirmez votre mot de passe',
+                    ]
+                ],
             ])
             ->add('submit', SubmitType::class, [
                 'label' => 'Valider',
@@ -58,7 +64,7 @@ class RegisterType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            // Configure your form options here
+            'data_class' => User::class
         ]);
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Form;
 
+use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -14,10 +15,10 @@ class LoginType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('username', TextType::class, [
-                'label' => 'Nom d\'utilisateur',
+            ->add('email', TextType::class, [
+            'label' => 'Adresse e-mail',
                 'attr' => [
-                    'placeholder' => 'Entrez votre nom d\'utilisateur ou adresse mail'
+                    'placeholder' => 'Entrez votre adresse mail'
                 ]
             ])
             ->add('password', PasswordType::class, [
@@ -39,7 +40,7 @@ class LoginType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            // Configure your form options here
+            'data_class' => User::class
         ]);
     }
 }
