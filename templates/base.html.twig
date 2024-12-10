@@ -1,3 +1,5 @@
+{% set user = app.session.get('user') %}
+
 <!DOCTYPE html>
 <html data-bs-theme="light">
     <head>
@@ -47,6 +49,7 @@
                             <a class="dropdown-item" href="/compte/connexion">Se connecter</a>
                             <a class="dropdown-item" href="#">Voir mes commandes</a>
                             <a class="dropdown-item" href="#">Profil</a>
+                            {% if user %}{% if user.role == "ROLE_ADMIN" %}<a class="dropdown-item" href="/admin/home">Panel Administrateur</a>{% endif %}{% endif %}
                         </div>
                     </div>
                 </div>
