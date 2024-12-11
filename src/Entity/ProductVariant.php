@@ -14,6 +14,9 @@ class ProductVariant
     private int $id;
 
     #[ORM\Column(type: 'string', length: 255)]
+    private string $reference;
+
+    #[ORM\Column(type: 'string', length: 255)]
     private string $name;
 
     #[ORM\Column(type: 'text')]
@@ -42,6 +45,16 @@ class ProductVariant
     public function getId(): int
     {
         return $this->id;
+    }
+
+    public function getReference(): string
+    {
+        return $this->reference;
+    }
+
+    public function setReference(string $reference): void
+    {
+        $this->reference = $reference;
     }
 
     public function getName(): string
